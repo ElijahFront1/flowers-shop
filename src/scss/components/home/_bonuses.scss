@@ -1,0 +1,22 @@
+.bonuses {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #f0f0f0;
+    height: 128px;
+    width: 1250px;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    bottom: -76px;
+    &-item {
+        display: flex;
+    }
+    &-item p {
+        padding-left: 15px;
+    }
+}
+
+.bonuses-wrap {
+    position: relative;
+}
+

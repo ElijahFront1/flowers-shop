@@ -1,0 +1,35 @@
+.product {
+    width: 260px;
+    height: 500px;
+    &__previev {
+        height: 375px;
+        background-color: gray;
+        position: relative;
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__namePrice {
+        padding-top: 20px;
+        text-align: center;
+    }
+    &__discount {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    &__price {
+        font-weight: 600;
+    }
+    &__name {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    &__add-to-cart {
+        position: absolute;
+        bottom: 6px;
+        right: 46px;
+    }
+}

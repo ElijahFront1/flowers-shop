@@ -1,0 +1,16 @@
+.newArrival {
+    padding-top: 160px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    & h1 {
+        font-size: 40px;
+        font-weight: 800;
+    }
+    &__products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+

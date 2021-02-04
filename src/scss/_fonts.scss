@@ -6,6 +6,12 @@
   font-style: normal;
 }
 
+@font-face { 
+  font-family: "rouble";
+  src: url("./fonts/rouble.otf") format("opentype");
+}
+.rub { font-family: "rouble"; }
+
 .icon-user,
 .icon-people,
 .icon-user-female,

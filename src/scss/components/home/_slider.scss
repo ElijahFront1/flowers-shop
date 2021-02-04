@@ -1,0 +1,41 @@
+.slider {
+    max-width: 570px;
+    z-index: 10;
+    position: absolute;
+    top: 25%;
+    &-wrap {
+        background-color: white;
+        max-height: 700px;
+    }
+    &-title {
+        font-size: 72px;
+        line-height: 1;
+        color: #434343;
+        font-weight: 700;
+    }
+    &-discription {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    &-discription-bottom {
+        padding-bottom: 30px;
+    }
+    &-shop-btn button {
+        height: 50px;
+        width: 140px;
+        border-radius: 50px;
+        background-color: #e55472;
+        color: white;
+    }
+}
+
+.css-adaptive-image {
+    display: block;
+    width: 100%;
+}
+
+.slick-list {
+    height: 700px;
+}
