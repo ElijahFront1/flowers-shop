@@ -1,0 +1,12 @@
+.shop__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.counter__settings {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    padding-top: 15px;
+}

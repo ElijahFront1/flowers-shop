@@ -5,7 +5,7 @@ function ShopItem() {
     return (
         <div className="product">
             <div className="product__previev">
-                <img src={flower2} alt="" srcset=""/>
+                <img src="https://storage.florist.ru/f/get/content/bouquet-list/dd/84/_0a663a3aa328adba22f9c92c95f6/5a8adcb02aa5f.jpg" alt="" />
                 <div className="product__discount">
                     <p>10%</p>
                 </div>
@@ -18,7 +18,7 @@ function ShopItem() {
                     <p>Тюльпаны</p>
                 </div>
                 <div className="product__price">
-                    <p>560 <span class="rub">i</span></p>
+                    <p>560 <span className="rub">i</span></p>
                 </div>
             </div>
         </div>

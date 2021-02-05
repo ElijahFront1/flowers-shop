@@ -1,0 +1,74 @@
+{
+    "flowers": [
+      {
+        "id": 0,
+        "imageUrl": "https://storage.florist.ru/f/get/content/bouquet-list/dd/84/_0a663a3aa328adba22f9c92c95f6/5a8adcb02aa5f.jpg",
+        "name": "цветы",
+        "price": 803,
+        "rating": 6
+      },
+      {
+        "id": 1,
+        "imageUrl": "https://storage.florist.ru/f/get/content/bouquet-plist/8b/0d/_5c671108f59a8e647a212ce00c56/5dbc2a622ab57.jpg",
+        "name": "цветы",
+        "price": 245,
+        "rating": 6
+      },
+      {
+        "id": 2,
+        "imageUrl": "https://storage.florist.ru/f/get/content/bouquet-list/64/bc/_87a35f0f5fad603b0502ede63190/270x270/5e1db3b7c1b46.jpg",
+        "name": "цветы",
+        "price": 295,
+        "rating": 4
+      },
+      {
+        "id": 3,
+        "imageUrl": "https://storage.florist.ru/f/get/content/bouquet-list/69/ac/_98df0cd4eef7fa2c4447118c11b7/5a701c62124ce.jpg",
+        "name": "цветы",
+        "price": 275,
+        "rating": 2
+      },
+      {
+        "id": 4,
+        "imageUrl": "https://storage.florist.ru/f/get/content/bouquet-list/92/f3/_f16141e0a4856980853b70c5aa32/58fa2403afd7b.jpg",
+        "name": "цветы",
+        "price": 415,
+        "rating": 8
+      },
+      {
+        "id": 5,
+        "imageUrl": "https://storage.florist.ru/f/get/content/bouquet-list/d8/20/_6b6358edb1e3b90bb489422af77e/5d30394c1ab42.jpg",
+        "name": " цветы",
+        "price": 580,
+        "rating": 2
+      },
+      {
+        "id": 6,
+        "imageUrl": "https://storage.florist.ru/f/get/content/bouquet-list/b5/e7/_b92fd15e6b3e68223077cdc18823/5a998fc554eda.jpg",
+        "name": " цветы",
+        "category": 1,
+        "rating": 9
+      },
+      {
+        "id": 7,
+        "imageUrl": "https://storage.florist.ru/f/get/content/bouquet-list/25/42/_129053197e569a782b2ba49ae7ff/5cde94141bde6.jpg",
+        "name": " цветы",
+        "price": 450,
+        "rating": 10
+      },
+      {
+        "id": 8,
+        "imageUrl": "https://storage.florist.ru/f/get/content/bouquet-plist/6e/3a/_6f12d1b801bbc893547767139728/5d93261f56666.jpg",
+        "name": " цветы",
+        "price": 395,
+        "rating": 10
+      },
+      {
+        "id": 9,
+        "imageUrl": "https://storage.florist.ru/f/get/content/bouquet-list/43/70/_c85862475b99bb70e8f197f2c658/rfn604565_1432717145.jpg",
+        "name": " цветы",
+        "price": 285,
+        "rating": 7
+      }
+    ]
+  }

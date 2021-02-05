@@ -1,13 +1,18 @@
 .product {
     width: 260px;
-    height: 500px;
+    height: 420px;
     &__previev {
-        height: 375px;
-        background-color: gray;
+        height: 301px;
+        background-color: white;
         position: relative;
+        border: 1px solid bisque;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
         & img {
-            width: 100%;
-            height: 100%;
+            width: 85%;
+            align-self: center;
+            height: 85%;
         }
     }
     &__namePrice {

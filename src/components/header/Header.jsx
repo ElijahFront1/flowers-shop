@@ -1,5 +1,6 @@
 import React from 'react'
 import logoImg from '../../images/logo.png'
+import Navbar from './Navbar/Navbar'
 
 function Header() {
     return (
@@ -44,17 +45,7 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <nav>
-                <div className="top-navigation">
-                    <ul>
-                        <li>ГЛАВНАЯ</li>
-                        <li>МАГАЗИН</li>
-                        <li>ГАЛЕРЕЯ</li>
-                        <li>БЛОГ</li>
-                        <li>КОНТАКТЫ</li>
-                    </ul>
-                </div>
-            </nav>
+            <Navbar />
         </div>
     )
 }

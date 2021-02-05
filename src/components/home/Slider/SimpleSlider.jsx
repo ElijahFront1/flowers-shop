@@ -19,7 +19,7 @@ export default class SimpleSlider extends Component {
       fade: true,
       autoplaySpeed: 5000,
       autoplay: true,
-      pauseOnHover: true,
+      pauseOnHover: false,
     };
     return (
       <div>
