@@ -1,7 +1,17 @@
 import React from 'react'
-import flower2 from '../../../images/flowers-item2.png'
 
-function ShopItem({ name, imageUrl, price, types, sizes }) {
+function ShopItem({id, name, imageUrl, price, types, sizes, onClickAddFlower, addedCount }) {
+
+    const onAddFlower = () => { //Добавляем пиццу в корзину
+        const obj = {
+            id,
+            name,
+            imageUrl,
+            price,
+        }; 
+        onClickAddFlower(obj)
+    }
+
     return (
         <div className="product">
             <div className="product__previev">
@@ -10,7 +20,7 @@ function ShopItem({ name, imageUrl, price, types, sizes }) {
                     <p>10%</p>
                 </div>
                 <div className="product__add-to-cart">
-                    <p>Добавить в корзину</p>
+                    <button onClick={onAddFlower} >Добавить в корзину {addedCount}</button>
                 </div>
             </div>
             <div className="product__namePrice">

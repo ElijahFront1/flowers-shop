@@ -1,11 +1,13 @@
 import { combineReducers } from 'redux';
 
-import flowersReducer from './flowers'
-import sortReducer from './sort'
+import sort from './sort'
+import flowers from './flowers'
+import cart from './cart'
 
 const rootReducer = combineReducers({
-    sort :sortReducer,
-    flowers :flowersReducer,
+    sort,
+    flowers,
+    cart,
 });
 
 export default rootReducer; 

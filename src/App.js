@@ -1,8 +1,6 @@
 import React from 'react';
 import {
   Route,
-  Switch,
-  Redirect,
   withRouter,
 } from "react-router-dom"
 
@@ -10,7 +8,7 @@ import Home from './components/home/Home'
 import Header from './components/header/Header'
 import Shop from './components/shop/Shop'
 import Gallery from './components/gallery/Gallery'
-import NotFound from './components/404/NotFound'
+import Cart from './components/cart/Cart'
 
 function App() {
   return (
@@ -21,6 +19,7 @@ function App() {
           <Route path='/home' component={Home} exact />
           <Route path='/shop' component={Shop} exact />
           <Route path='/gallery' component={Gallery} exact />
+          <Route path='/cart' component={Cart} exact />
           {/* <Route component={NotFound} /> */}
       </React.StrictMode>
     </div>

@@ -1,0 +1,27 @@
+.cart__product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid gray;
+    &-image {
+        width: 100px;
+        height: 100px;
+    }
+    & img {
+        width: 100%;
+    }
+    &-price {
+        color: red;
+        font-weight: 500;
+    }
+    &-subtotal {
+        color: red;
+        font-weight: 500;
+    }
+    & span {
+        color: red;
+        font-weight: 500;
+    }
+}

@@ -1,6 +1,5 @@
 const initialState = {
     items: [],
-    isLoaded: false,
 }
 const flowers = (state = initialState, action) => {
     switch (action.type) {
@@ -8,13 +7,6 @@ const flowers = (state = initialState, action) => {
             return {
                 ...state,
                 items: action.payload,
-                isLoaded: true,
-            }
-
-        case 'SET_LOADED':
-            return {
-                ...state,
-                isLoaded: action.payload,
             }
         default:
             return state;

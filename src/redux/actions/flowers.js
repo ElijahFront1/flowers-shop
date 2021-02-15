@@ -5,10 +5,10 @@ export const setLoaded = (payload) => ({
     payload,
 })
 
-export const fetchFlowers = () => (dispatch) => {
+export const fetchFlowers = (sortBy) => (dispatch) => {
     dispatch(setLoaded(false));
-    axios.get(`http://localhost:3002/db.json`).then(({ data }) => {
-        dispatch(setFlowers(data.flowers));
+    axios.get(`http://localhost:3003/flowers?&_sort=${sortBy.type}&_order=${sortBy.order}`).then(({ data }) => {
+        dispatch(setFlowers(data));
     })
 }
 

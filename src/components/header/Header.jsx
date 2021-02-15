@@ -1,8 +1,11 @@
 import React from 'react'
 import logoImg from '../../images/logo.png'
 import Navbar from './Navbar/Navbar'
+import { NavLink } from 'react-router-dom';
+import {useSelector} from 'react-redux'
 
 function Header() {
+    const { totalPrice, totalCount } = useSelector(({ cart }) => cart)
     return (
         <div>
             <div className="container">
@@ -31,18 +34,20 @@ function Header() {
                             </form>
                         </div>
                     </div>
-                    <div className="cart">
-                        <div className="cart-info">
-                            <div className="cart-sup">
-                                <i className="icon-handbag"></i>
-                                <sup>2</sup>
+                    <NavLink to="/cart">
+                        <div className="cart" >
+                            <div className="cart-info">
+                                <div className="cart-sup">
+                                    <i className="icon-handbag"></i>
+                                    <sup>{totalCount}</sup>
+                                </div>
+                                <h6>
+                                    <div>Ваша корзина</div>
+                                    <div className="cart-price">{totalPrice}</div>
+                                </h6>
                             </div>
-                            <h6>
-                                <div>Ваша корзина</div>
-                                <div className="cart-price">560 рублей</div>
-                            </h6>
                         </div>
-                    </div>
+                    </NavLink>
                 </div>
             </div>
             <Navbar />
