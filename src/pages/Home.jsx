@@ -1,7 +1,7 @@
 import React from 'react'
-import Bonuses from './Bonuses/Bonuses'
-import NewArrival from './NewArrival/NewArrival'
-import Slider from './Slider/SliderArea'
+import Bonuses from '../components/home/Bonuses/Bonuses'
+import NewArrival from '../components/home/NewArrival/NewArrival'
+import Slider from '../components/home/Slider/SliderArea'
 
 function Home() {
     return (

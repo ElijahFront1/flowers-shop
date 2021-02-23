@@ -1,0 +1,7 @@
+.sort {
+    cursor: pointer;
+    &-menu {
+        position: absolute;
+        z-index: 1;
+    }
+}

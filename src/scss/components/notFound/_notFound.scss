@@ -1,0 +1,10 @@
+.wrapper-404 {
+    text-align: center;
+    padding-top: 150px;
+    & h1 {
+        color: #e55472;
+    }
+    & p {
+        padding-top: 5px;
+    }
+}

@@ -1,26 +1,39 @@
 import React from 'react'
 
-function CartItem() {
+function CartItem({ id, name, type, size, totalPrice, toralCount, onRemove, onMinus, onPlus, price, imageUrl }) {
+
+    const handleRemoveClick = () => {
+        onRemove(id);
+    }
+
+    const handlePlusItem = () => {
+        onPlus(id)
+    }
+
+    const handleMinusItem = () => {
+        onMinus(id)
+    }
+
     return (
         <div className="container">
             <div className="cart__product">
                 <div className="cart__product-remove">
-                    X
-            </div>
+                    <span onClick={handleRemoveClick}>X</span>
+                </div>
                 <div className="cart__product-image">
-                    <img src="https://storage.florist.ru/f/get/content/bouquet-list/dd/84/_0a663a3aa328adba22f9c92c95f6/5a8adcb02aa5f.jpg" alt="" />
+                    <img src={imageUrl} alt="" />
                 </div>
                 <div className="cart__product-name">
-                    НА КРЫЛЬЯХ ВЕТРА
-            </div>
+                    {name}
+                </div>
                 <div className="cart__product-price">
-                    803 <span class="rub">i</span>
+                    {price} <span class="rub">i</span>
                 </div>
                 <div className="cart__product-quantity">
-                    - <span>02</span> +
-            </div>
+                    <span onClick={handleMinusItem}>-</span>  <span>{toralCount}</span> <span onClick={handlePlusItem}>+</span>
+                </div>
                 <div className="cart__product-subtotal">
-                    1606 <span class="rub">i</span>
+                    {totalPrice} <span class="rub">i</span>
                 </div>
             </div>
         </div>

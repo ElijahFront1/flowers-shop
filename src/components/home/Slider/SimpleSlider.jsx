@@ -17,9 +17,9 @@ export default class SimpleSlider extends Component {
       slidesToScroll: 1,
       tabindex: false,
       fade: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 3000,
       autoplay: true,
-      pauseOnHover: false,
+      pauseOnHover: true,
     };
     return (
       <div>

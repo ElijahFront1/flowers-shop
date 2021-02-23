@@ -10,7 +10,7 @@ const SortSettings = React.memo(function SortSettings({ items, onClickSortType, 
         setVisiblePopap(!visiblePopup);
     };
 
-    const onSelectItem = index => { //index = {name: "популярности", type: "popular", order: "desc"}
+    const onSelectItem = index => {
         onClickSortType(index);
         setVisiblePopap(false);
     }
@@ -31,7 +31,7 @@ const SortSettings = React.memo(function SortSettings({ items, onClickSortType, 
         <div ref={sortRef} className="sort">
             Сортировать:
             <span onClick={toggleVisiblePopup}> {activeLabel}</span>
-            {visiblePopup && <div className="sort__popup">
+            {visiblePopup && <div className="sort-menu">
                 <ul>
                     {items &&
                         items.map((obj, index) => (

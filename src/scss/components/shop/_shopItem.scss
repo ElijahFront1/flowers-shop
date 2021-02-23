@@ -34,7 +34,13 @@
     }
     &__add-to-cart {
         position: absolute;
-        bottom: 6px;
-        right: 46px;
+        bottom: 0px;
+        background-color: wheat;
+        border-radius: 3px;
+        color: #545454;
+        font-weight: 500;
+        width: 260px;
+        padding: 0.5em;
+        text-align: center;
     }
 }

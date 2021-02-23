@@ -26,8 +26,14 @@
         height: 50px;
         width: 140px;
         border-radius: 50px;
+        font-weight: 600;
         background-color: #e55472;
         color: white;
+        transition: 0.3s;
+        &:hover {
+            background-color: #565656;
+            color: white;
+        }
     }
 }
 

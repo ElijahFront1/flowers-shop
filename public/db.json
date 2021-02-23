@@ -1,11 +1,12 @@
 {
-  "flowers": [
+  "shop_page_items": [
     {
       "id": 0,
       "imageUrl": "https://storage.florist.ru/f/get/content/bouquet-list/dd/84/_0a663a3aa328adba22f9c92c95f6/5a8adcb02aa5f.jpg",
       "name": "На Крыльях Ветра",
       "price": 803,
-      "rating": 6
+      "rating": 6,
+      "novelty": "new"
     },
     {
       "id": 1,
@@ -26,14 +27,16 @@
       "imageUrl": "https://storage.florist.ru/f/get/content/bouquet-list/69/ac/_98df0cd4eef7fa2c4447118c11b7/5a701c62124ce.jpg",
       "name": "Признание в Любви",
       "price": 275,
-      "rating": 2
+      "rating": 2,
+      "novelty": "new"
     },
     {
       "id": 4,
       "imageUrl": "https://storage.florist.ru/f/get/content/bouquet-list/92/f3/_f16141e0a4856980853b70c5aa32/58fa2403afd7b.jpg",
       "name": "Любезный Пич",
       "price": 415,
-      "rating": 8
+      "rating": 8,
+      "novelty": "new"
     },
     {
       "id": 5,
@@ -47,7 +50,8 @@
       "imageUrl": "https://storage.florist.ru/f/get/content/bouquet-list/b5/e7/_b92fd15e6b3e68223077cdc18823/5a998fc554eda.jpg",
       "name": "Малиновые Зори",
       "price": 580,
-      "rating": 9
+      "rating": 9,
+      "novelty": "new"
     },
     {
       "id": 7,
@@ -61,7 +65,8 @@
       "imageUrl": "https://storage.florist.ru/f/get/content/bouquet-plist/6e/3a/_6f12d1b801bbc893547767139728/5d93261f56666.jpg",
       "name": "Милый Каприз",
       "price": 395,
-      "rating": 10
+      "rating": 10,
+      "novelty": "new"
     },
     {
       "id": 9,
@@ -75,7 +80,8 @@
       "imageUrl": "https://storage.florist.ru/f/get/content/bouquet-list/43/70/_c85862475b99bb70e8f197f2c658/rfn604565_1432717145.jpg",
       "name": "Пионовое Чудо",
       "price": 285,
-      "rating": 7
+      "rating": 7,
+      "novelty": "new"
     },
     {
       "id": 11,

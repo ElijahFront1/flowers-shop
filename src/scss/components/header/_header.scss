@@ -109,6 +109,10 @@ $screen-desktops-max: 1199px;
             margin-right: 45px;
             font-size: 13px;
             font-weight: 500;
+            height: 23px;
+            &:hover {
+                border-bottom: 1px #e55472 solid;
+            }
         }
     }
 }
@@ -124,7 +128,7 @@ $screen-desktops-max: 1199px;
             height: 20px;
             width: 20px;
             line-height: 20px;
-            background-color: red;
+            background-color: #e55472;
             color: white;
             text-align: center;
             border-radius: 100%;
@@ -143,8 +147,8 @@ $screen-desktops-max: 1199px;
         align-self: center;
     }
     &-price {
-        color: red;
-    }    
+        color: #e55472;
+    }
 }
 
 .icon-handbag:before {
