@@ -6,7 +6,7 @@ import {
 
 import Home from './pages/Home'
 import Header from './components/header/Header'
-import Shop from './pages/Shop'
+import Shop from './pages/shop/Shop'
 import Gallery from './components/gallery/Gallery'
 import NotFound from './components/404/NotFound'
 import Cart from './pages/Cart'

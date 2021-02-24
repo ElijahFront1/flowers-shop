@@ -31,10 +31,14 @@ function Cart() {
     }
 
     return (
-        <div>
-            Всего: {totalCount}
-            Стоимость: {totalPrice}
-            <span onClick={onClearCart}> Очистить корзину</span>
+        <div className="container">
+            <div className="cart__wrapper">
+                <span>
+                    <span className="cart-total__count">Всего: {totalCount}</span>
+                    <span className="cart-total__price">Стоимость: {totalPrice}</span>
+                </span>
+                <span onClick={onClearCart}> Очистить корзину</span>
+            </div>
             {addPizzas.map(obj => <CartItem
                 key={obj.id}
                 price={obj.price}

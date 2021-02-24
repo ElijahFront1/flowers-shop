@@ -5,7 +5,7 @@
         height: 301px;
         background-color: white;
         position: relative;
-        border: 1px solid bisque;
+        border: 1px solid #e55472;
         border-radius: 5px;
         display: flex;
         justify-content: center;
@@ -35,12 +35,17 @@
     &__add-to-cart {
         position: absolute;
         bottom: 0px;
-        background-color: wheat;
+        background-color: #e55472;
         border-radius: 3px;
-        color: #545454;
+        color: white;
         font-weight: 500;
-        width: 260px;
+        width: 100%;
         padding: 0.5em;
         text-align: center;
+        transition: 0.3s;
+        &:hover {
+            background-color: #565656;
+            color: white;
+        }
     }
 }

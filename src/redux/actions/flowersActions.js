@@ -7,7 +7,7 @@ export const setLoaded = (payload) => ({
 
 export const fetch_shop_page_items = (sortBy) => (dispatch) => {
     dispatch(setLoaded(false));
-    axios.get(`/shop_page_items?&_sort=${sortBy.type}&_order=${sortBy.order}`).then(({ data }) => {
+    axios.get(`/shop_page_items?&_sort=${sortBy.type}&_page=1&_limit=8&_order=${sortBy.order}`).then(({ data }) => {
         dispatch(setShopPageItems(data));
     })
 }

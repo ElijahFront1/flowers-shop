@@ -1,0 +1,10 @@
+.cart__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.cart {
+    &-total__count {
+        padding-right: 15px;
+    }
+}

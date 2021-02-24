@@ -35,4 +35,5 @@ function NewArrivalItem({ id, name, imageUrl, price, types, sizes, onClickAddFlo
     )
 }
 
+
 export default NewArrivalItem
