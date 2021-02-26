@@ -6,7 +6,7 @@ import { clearCart, removeCartItem, minusCartItem, plusCartItem } from '../redux
 function Cart() {
     const dispatch = useDispatch();
     const { totalPrice, totalCount, items } = useSelector(({ cartReducer }) => cartReducer)
-    console.log(items);
+
     const onClearCart = () => {
         if (window.confirm('Удалить содержимое?')) {
             dispatch(clearCart())

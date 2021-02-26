@@ -89,6 +89,37 @@
       "name": "Милая моя",
       "price": 285,
       "rating": 7
+    },
+    {
+      "id": 12,
+      "imageUrl": "https://storage.florist.ru/f/get/content/bouquet-list/69/ac/_98df0cd4eef7fa2c4447118c11b7/5a701c62124ce.jpg",
+      "name": "Признание в Любви",
+      "price": 275,
+      "rating": 2,
+      "novelty": "new"
+    },
+    {
+      "id": 13,
+      "imageUrl": "https://storage.florist.ru/f/get/content/bouquet-list/92/f3/_f16141e0a4856980853b70c5aa32/58fa2403afd7b.jpg",
+      "name": "Любезный Пич",
+      "price": 415,
+      "rating": 8,
+      "novelty": "new"
+    },
+    {
+      "id": 14,
+      "imageUrl": "https://storage.florist.ru/f/get/content/bouquet-list/d8/20/_6b6358edb1e3b90bb489422af77e/5d30394c1ab42.jpg",
+      "name": "Яркие Лучи",
+      "price": 580,
+      "rating": 2
+    },
+    {
+      "id": 15,
+      "imageUrl": "https://storage.florist.ru/f/get/content/bouquet-list/b5/e7/_b92fd15e6b3e68223077cdc18823/5a998fc554eda.jpg",
+      "name": "Малиновые Зори",
+      "price": 580,
+      "rating": 9,
+      "novelty": "new"
     }
   ]
 }

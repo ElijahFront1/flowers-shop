@@ -1,6 +1,6 @@
 import React from 'react'
 import Bonuses from '../components/home/Bonuses/Bonuses'
-import NewArrival from '../components/home/NewArrival/NewArrival'
+import MostPopular from '../components/home/NewArrival/MostPopular'
 import Slider from '../components/home/Slider/SliderArea'
 
 function Home() {
@@ -8,7 +8,7 @@ function Home() {
         <div>
             <Slider />
             <Bonuses />
-            <NewArrival />
+            <MostPopular />
         </div>
     )
 }

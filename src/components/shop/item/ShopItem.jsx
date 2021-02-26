@@ -17,7 +17,7 @@ function ShopItem({id, name, imageUrl, price, types, sizes, onClickAddFlower, ad
             <div className="product__previev">
                 <img src={imageUrl} alt="" />
                 <div className="product__discount">
-                    <p>10%</p>
+                    <p>{id}</p>
                 </div>
                 <div className="product__add-to-cart">
                     <button onClick={onAddFlower} >Добавить в корзину {addedCount}</button>

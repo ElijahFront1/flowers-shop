@@ -21,3 +21,4 @@ export const minusCartItem = (id) => ({
     type: 'MINUS_CART_ITEM',
     payload: id,
 })
+

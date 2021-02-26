@@ -102,7 +102,7 @@ const cart = (state = initialstate, action) => {
 
             const totalCount = getTotalSum(newItems, 'items.length');
             const totalPrice = getTotalSum(newItems, 'totalPrice');
-
+            
             return {
                 ...state,
                 items: newItems,

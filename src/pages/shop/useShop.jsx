@@ -11,7 +11,7 @@ export default function useShop() {
     ]
     const dispatch = useDispatch();
     const { sortBy } = useSelector(({ sortReducer }) => sortReducer);
-    const items = useSelector(({ flowersReducer }) => flowersReducer.items);
+    const items = useSelector(({ shopReducer }) => shopReducer.items);
     const cartItems = useSelector(({ cartReducer }) => cartReducer.items);
     const onSelectSortType = React.useCallback((type) => {
         dispatch(setSortBy(type))

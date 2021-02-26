@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
 
 import sortReducer from './sortReducer'
-import flowersReducer from './flowersReducer'
+import shopReducer from './shopReducer'
 import cartReducer from './cartReducer'
 
 const rootReducer = combineReducers({
     sortReducer,
-    flowersReducer,
+    shopReducer,
     cartReducer,
 });
 
