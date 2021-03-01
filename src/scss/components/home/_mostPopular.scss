@@ -1,0 +1,27 @@
+.mostPopular {
+    padding-top: 160px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    & h1 {
+        font-size: 40px;
+        font-weight: 800;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 365px;
+            height: 2px;
+            background-color: #e55472;
+            left: 0;
+            top: 73px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+    &__products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

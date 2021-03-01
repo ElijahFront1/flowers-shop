@@ -1,33 +1,34 @@
 import React from 'react'
 
-function ShopItem({id, name, imageUrl, price, types, sizes, onClickAddFlower, addedCount }) {
+function ShopItem({ id, name, imageUrl, price, types, sizes, onClickAddFlower, addedCount }) {
 
-    const onAddFlower = () => { //Добавляем пиццу в корзину
+    const onAddFlower = () => {
         const obj = {
             id,
             name,
             imageUrl,
             price,
-        }; 
+        };
         onClickAddFlower(obj)
     }
 
     return (
         <div className="product">
-            <div className="product__previev">
+            <div className="product-previev">
                 <img src={imageUrl} alt="" />
-                <div className="product__discount">
-                    <p>{id}</p>
+                <div className="product-discount">
                 </div>
-                <div className="product__add-to-cart">
-                    <button onClick={onAddFlower} >Добавить в корзину {addedCount}</button>
+                <div className="product-add__to__cart">
+                    <button onClick={onAddFlower} >Добавить в корзину
+                     <span className="product-added__count">{addedCount}</span>
+                    </button>
                 </div>
             </div>
-            <div className="product__namePrice">
-                <div className="product__name">
+            <div className="product-namePrice">
+                <div className="product-name">
                     <p>{name}</p>
                 </div>
-                <div className="product__price">
+                <div className="product-price">
                     <p>{price} <span className="rub">i</span></p>
                 </div>
             </div>

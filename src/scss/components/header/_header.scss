@@ -20,6 +20,9 @@ $screen-desktops-max: 1199px;
     padding-bottom: 15px;
     &-logo {
         align-self: center;
+        & img {
+            height: 83px;
+        }
     }
     & h6 {
         font-size: 13px;
@@ -95,7 +98,7 @@ $screen-desktops-max: 1199px;
     align-self: center;
 }
 
-.top-navigation {
+.top__navigation {
     border-top: 1px solid #f0f0f0;
     display: flex;
     justify-content: center;
@@ -110,13 +113,15 @@ $screen-desktops-max: 1199px;
             font-size: 13px;
             font-weight: 500;
             height: 23px;
-            &:hover {
-                border-bottom: 1px #e55472 solid;
-            }
         }
     }
+    &-item a{
+        color: #666666;
+    }
 }
-
+.activeLink {
+    border-bottom: 1px #e55472 solid;
+}
 .cart {
     display: flex;
     align-self: center;
@@ -145,6 +150,7 @@ $screen-desktops-max: 1199px;
         position: relative;
         padding-right: 24px;
         align-self: center;
+        font-size: 17px;
     }
     &-price {
         color: #e55472;
@@ -153,5 +159,5 @@ $screen-desktops-max: 1199px;
 
 .icon-handbag:before {
     content: "\e035";
-    font-weight: 600;
+    font-weight: 500;
 }

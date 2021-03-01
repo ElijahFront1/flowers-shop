@@ -19,7 +19,7 @@ function CartItem({ id, name, type, size, totalPrice, toralCount, onRemove, onMi
             <div className="cart__product-wrapper">
                 <div className="cart__product">
                     <div className="cart__product-remove">
-                        <span onClick={handleRemoveClick}>X</span>
+                        <span onClick={handleRemoveClick}>Удалить</span>
                     </div>
                     <div className="cart__product-image">
                         <img src={imageUrl} alt="" />
@@ -31,10 +31,14 @@ function CartItem({ id, name, type, size, totalPrice, toralCount, onRemove, onMi
                         {price} <span class="rub">i</span>
                     </div>
                     <div className="cart__product-quantity">
-                        <span onClick={handleMinusItem}>-</span>  <span>{toralCount}</span> <span onClick={handlePlusItem}>+</span>
+                        <div className="cart__product-quantity-item" onClick={handleMinusItem}>-</div>
+                        <div className="cart__product-quantity-item">{toralCount}</div>
+                        <div className="cart__product-quantity-item" onClick={handlePlusItem}>+</div>
                     </div>
                     <div className="cart__product-subtotal">
-                        {totalPrice} <span class="rub">i</span>
+                        <div className="cart__product-subtotal-total__price">
+                            {totalPrice} <span class="rub">i</span>
+                        </div>
                     </div>
                 </div></div>
         </div>

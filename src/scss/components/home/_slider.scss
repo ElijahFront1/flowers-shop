@@ -1,8 +1,9 @@
 .slider {
-    max-width: 570px;
+    max-width: 615px;
     z-index: 10;
     position: absolute;
     top: 25%;
+    padding-left: 40px;
     &-wrap {
         background-color: white;
         max-height: 700px;

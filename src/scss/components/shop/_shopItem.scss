@@ -1,7 +1,7 @@
 .product {
     width: 260px;
     height: 420px;
-    &__previev {
+    &-previev {
         height: 301px;
         background-color: white;
         position: relative;
@@ -15,24 +15,24 @@
             height: 85%;
         }
     }
-    &__namePrice {
+    &-namePrice {
         padding-top: 20px;
         text-align: center;
     }
-    &__discount {
+    &-discount {
         position: absolute;
         top: 15px;
         left: 15px;
     }
-    &__price {
+    &-price {
         font-weight: 600;
     }
-    &__name {
+    &-name {
         font-size: 14px;
         text-transform: uppercase;
         font-weight: 400;
     }
-    &__add-to-cart {
+    &-add__to__cart {
         position: absolute;
         bottom: 0px;
         background-color: #e55472;
@@ -47,5 +47,14 @@
             background-color: #565656;
             color: white;
         }
+        & button {
+            width: 100%;
+        }
+    }
+    &-added__count {
+        display: inline-block;
+        position: absolute;
+        right: 17px;
+        color: white;
     }
 }

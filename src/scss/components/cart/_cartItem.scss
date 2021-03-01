@@ -9,6 +9,16 @@
     padding-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    &-remove {
+        width: 89px;
+        background-color: #f7f7f7;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+    }
     &-image {
         width: 100px;
         height: 100px;
@@ -16,16 +26,19 @@
     & img {
         width: 100%;
     }
-    &-price {
-        color: red;
-        font-weight: 500;
+    &-quantity {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f7f7f7;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        &-item {
+            width: 16px;
+            text-align: center;
+        }
     }
     &-subtotal {
-        color: red;
-        font-weight: 500;
-    }
-    & span {
-        color: red;
-        font-weight: 500;
+        width: 60px;
     }
 }

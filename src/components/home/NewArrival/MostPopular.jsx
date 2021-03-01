@@ -7,6 +7,7 @@ function MostPopular() {
     const { dispatch, sortBy, items } = useShop();
     React.useEffect(() => {
         dispatch(fetchShopItems(sortBy))
+        //eslint-disable-next-line react-hooks/exhaustive-deps
     }, [sortBy]);
     const mostPopularItems = items.slice(0, 8)
     return (

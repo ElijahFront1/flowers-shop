@@ -6,12 +6,12 @@ export const setTotalPagesCountFn = () => (dispatch) => {
     })
 }
 
-export const fetchShopItems = (sortBy, currentPage, perPage) => (dispatch) => {
+export const fetchShopItems = (sortBy, currentPage, perPage, search) => (dispatch) => {
     dispatch(setLoaded(false));
     axios.get(`/shop_page_items?&_sort=${sortBy.type}&_page=${currentPage}&_limit=${perPage}&_order=${sortBy.order}`).then(({ data }) => {
         dispatch(setShopPageItems(data));
     })
-
+    //q=${search}
 }
 
 export const setLoaded = (payload) => ({

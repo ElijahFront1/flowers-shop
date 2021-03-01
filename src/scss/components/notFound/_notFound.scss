@@ -1,10 +1,27 @@
 .wrapper-404 {
     text-align: center;
-    padding-top: 150px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     & h1 {
         color: #e55472;
     }
     & p {
         padding-top: 5px;
     }
+}
+
+.error__404-back-to-home {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 13px 40px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #e55472;
+    border-radius: 40px;
+    width: 302px;
+    margin-top: 23px;
 }

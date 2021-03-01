@@ -1,6 +1,6 @@
 const initialState = {
     items: [],
-    currentPage: 0,
+    currentPage: 1,
     perPage: 8,
     totalPagesCount: 0,
 }

@@ -1,17 +1,20 @@
 import React from 'react'
-import logoImg from '../../images/logo.png'
+import logoImg from '../../images/site-logo.png'
 import Navbar from './Navbar/Navbar'
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux'
 
 function Header() {
     const { totalPrice, totalCount } = useSelector(({ cartReducer }) => cartReducer)
+    const [input, setInput] = React.useState('');
     return (
         <div>
             <div className="container">
                 <div className="header">
                     <div className="header-logo">
-                        <img src={logoImg} alt=""/>
+                        <NavLink to="/home">
+                            <img src={logoImg} alt="" />
+                        </NavLink>
                     </div>
                     <div className="phone-search">
                         <div className="phone">
@@ -20,12 +23,12 @@ function Header() {
                             </div>
                             <div className="number-phone-wrap">
                                 <h6>ТЕЛЕФОН</h6>
-                                <p><a href="/">+7(963)-012-02-12</a></p>
+                                <h6>+7(963)-012-02-12</h6>
                             </div>
                         </div>
                         <div className="search">
                             <form action="#">
-                                <input type="text" placeholder="Искать..." />
+                                <input value={input} onInput={e => setInput(e.target.value)} placeholder="Искать..." />
                                 <button>
                                     <span>
                                         <i className="icon-magnifier"></i>

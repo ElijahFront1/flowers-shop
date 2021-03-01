@@ -30,7 +30,7 @@ function Shop() {
             <div className="container">
                 <div className="counter__settings">
                     <div className="counter">
-                        <p>Показанно {items.length} результатов из {totalPagesCount}</p>
+                        <p>Показанна {currentPage} страница из {pages.length}</p>
                     </div>
                     <div className="sortSet">
                         <SortSettings activeSortType={sortBy.type} items={sortSet} onClickSortType={onSelectSortType} />

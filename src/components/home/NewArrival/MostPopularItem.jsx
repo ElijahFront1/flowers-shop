@@ -16,6 +16,13 @@ function MostPopularItem({ id, name, imageUrl, price, types, sizes, onClickAddFl
         <div className="product">
             <div className="product__previev">
                 <img src={imageUrl} alt="" />
+                <div className="product__previev-hover">
+                    <ul>
+                        <li>q</li>
+                        <li>a</li>
+                        <li>v</li>
+                    </ul>
+                </div>
             </div>
             <div className="product__namePrice">
                 <div className="product__name">
