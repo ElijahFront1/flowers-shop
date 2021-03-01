@@ -27,7 +27,7 @@ function Cart() {
     return (
         <div className="container">
             <div className="cart__wrapper">
-                <СartDataView />
+                {totalCount >= 1 && <СartDataView />}
                 {addPizzas.map(obj => <CartItem
                     key={obj.id}
                     price={obj.price}

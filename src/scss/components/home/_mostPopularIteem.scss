@@ -1,35 +1,47 @@
-.product__previev-hover {
-    position: absolute;
-    top: 60%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+.container1 {
+    height: 301px;
+    position: relative;
+    border: 1px solid #e55472;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    width: 85%;
+    height: 85%;
+}
+
+.middle {
+    transition: 0.5s ease;
     opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    background-color: black;
-    & ul {
-        margin: 0;
-        padding: 0;
-        display: inline-block;
-        -webkit-box-shadow: var(--ltn__box-shadow-3);
-        box-shadow: var(--ltn__box-shadow-3);
-        & li {
-            height: 50px;
-            width: 56px;
-            line-height: 50px;
-            font-size: 14px;
-            text-align: center;
-            float: left;
-            margin-right: 0px;
-            margin-top: 0;
-            list-style: none;
-            border-right: 1px solid var(--border-color-7);
-        }
+    position: absolute;
+}
+
+.container1:hover .image {
+    opacity: 0.3;
+}
+
+.container1:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-weight: 600;
+    background-color: #e55472;
+    transition: 0.3s;
+    &:hover {
+        color: white;
+        background-color: #565656;
     }
 }

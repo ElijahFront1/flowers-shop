@@ -45,7 +45,7 @@ function Shop() {
                 <div className="shop__pagination">
                     {pages.map((page, index) => <span 
                     key={index} 
-                    className={currentPage === page ? "current-page" : "page"}
+                    className={currentPage === page ? "shop__pagination-current-page" : ""}
                     onClick={() => dispatch(setCurrentPage(page))}>{page}</span>)}
                 </div>
             </div>

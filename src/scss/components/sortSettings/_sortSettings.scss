@@ -1,7 +1,35 @@
 .sort {
+    background: #272829e3;
+    padding: 5px;
+    color: white;
+    border-radius: 30px;
+    position: relative;
     cursor: pointer;
     &-menu {
         position: absolute;
         z-index: 1;
+        color: #ebf2f8;
+        padding-top: 5px;
+        right: 4px;
+        text-align: center;
+        & ul li {
+            background: #272829e3;
+            padding: 5px;
+            color: white;
+            border-radius: 30px;
+            width: 195px;
+            display: inline-block;
+            text-align: center;
+            margin: 3px;
+        }
+    }
+    &-active {
+        background: #e55472;
+        padding: 5px;
+        color: white;
+        border-radius: 30px;
+        width: 195px;
+        display: inline-block;
+        text-align: center;
     }
 }

@@ -30,7 +30,10 @@ function Footer() {
                         </ul>
                     </div>
                 </div>
-                <div className="footer__blocks-author__link">https://github.com/Span415</div>
+                <div className="footer__blocks-bottom">
+                    <div className="footer__blocks-author__link"><a href="http://github.com/Span415">https://github.com/Span415</a></div>
+                    <div>2021</div>
+                </div>
             </div>
         </footer >
     )

@@ -6,6 +6,9 @@
 
 .general-wrapper {
   margin: 0 auto;
+  & a {
+   color: #565656;
+  }
 }
 
 .container {

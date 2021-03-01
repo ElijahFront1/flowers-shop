@@ -9,11 +9,11 @@ function MostPopular() {
         dispatch(fetchShopItems(sortBy))
         //eslint-disable-next-line react-hooks/exhaustive-deps
     }, [sortBy]);
-    const mostPopularItems = items.slice(0, 8)
+    const mostPopularItems = items.slice(0, 4)
     return (
         <div className="container">
             <div className="mostPopular">
-                <h1>Самые популярные компрозиции</h1>
+                <h1>Самые популярные композиции</h1>
             </div>
             <div className="mostPopular__products">
                 {mostPopularItems.map(obj => <MostPopularItem

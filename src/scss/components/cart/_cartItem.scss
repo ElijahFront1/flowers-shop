@@ -9,7 +9,6 @@
     padding-bottom: 30px;
     padding-left: 15px;
     padding-right: 15px;
-    color: black;
     font-weight: 500;
     cursor: pointer;
     &-remove {
@@ -18,6 +17,11 @@
         padding-left: 10px;
         padding-right: 10px;
         border-radius: 20px;
+        transition: 0.3s;
+        &:hover {
+            color: white;
+            background-color: #565656;
+        }
     }
     &-image {
         width: 100px;
@@ -33,12 +37,20 @@
         padding-left: 10px;
         padding-right: 10px;
         border-radius: 20px;
+        transition: 0.3s;
         &-item {
             width: 16px;
             text-align: center;
         }
+        &:hover {
+            background-color: #565656;
+            color: white;
+        }
     }
     &-subtotal {
         width: 60px;
+        &-total__price {
+            color:  #e55472;
+        }
     }
 }
