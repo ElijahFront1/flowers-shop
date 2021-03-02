@@ -1,10 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-function ShopItem({ name, imageUrl }) {
+function ShopItem({ imageUrl }) {
 
     return (
-        <div class="container1">
+        <div class="most-popular-item">
             <img src={imageUrl} alt="Avatar" class="image" />
                 <div class="middle">
                     <NavLink to="/shop" class="text">В магазин</NavLink>

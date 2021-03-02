@@ -1,7 +1,7 @@
-.cart__product-wrapper {
+.cart-item-wrapper {
     border-top: 1px solid #f0f0f0;
 }
-.cart__product {
+.cart-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,7 +11,7 @@
     padding-right: 15px;
     font-weight: 500;
     cursor: pointer;
-    &-remove {
+    &__remove {
         width: 89px;
         background-color: #f7f7f7;
         padding-left: 10px;
@@ -23,14 +23,14 @@
             background-color: #565656;
         }
     }
-    &-image {
+    &__image {
         width: 100px;
         height: 100px;
     }
     & img {
         width: 100%;
     }
-    &-quantity {
+    &__quantity {
         display: flex;
         justify-content: space-between;
         background-color: #f7f7f7;
@@ -47,7 +47,7 @@
             color: white;
         }
     }
-    &-subtotal {
+    &__subtotal {
         width: 60px;
         &-total__price {
             color:  #e55472;

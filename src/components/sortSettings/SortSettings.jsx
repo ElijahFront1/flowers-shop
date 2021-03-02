@@ -29,8 +29,8 @@ const SortSettings = React.memo(function SortSettings({ items, onClickSortType, 
 
     return (
         <div ref={sortRef} className="sort">
-            Сортировать  <span onClick={toggleVisiblePopup} className="sort-active"> {activeLabel}</span>
-            {visiblePopup && <div className="sort-menu">
+            Сортировать  <span onClick={toggleVisiblePopup} className="sort_active"> {activeLabel}</span>
+            {visiblePopup && <div className="sort__menu">
                 <ul>
                     {items &&
                         items.map((obj, index) => (

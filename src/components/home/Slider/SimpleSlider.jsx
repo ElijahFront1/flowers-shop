@@ -25,7 +25,7 @@ export default class SimpleSlider extends Component {
       <div>
         <Slider {...settings}>
           <div>
-            <img src={imageTwo} alt="" className="css-adaptive-image" />
+            <img src={imageTwo} alt="1" className="css-adaptive-image" />
             <SliderText />
           </div>
           <div>

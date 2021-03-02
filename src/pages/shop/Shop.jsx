@@ -28,24 +28,24 @@ function Shop() {
     return (
         <div>
             <div className="container">
-                <div className="counter__settings">
-                    <div className="counter">
+                <div className="shop-data">
+                    <div className="shop-data__counter">
                         <p>Показанна {currentPage} страница из {pages.length}</p>
                     </div>
-                    <div className="sortSet">
+                    <div className="shop-data__sort-set">
                         <SortSettings activeSortType={sortBy.type} items={sortSet} onClickSortType={onSelectSortType} />
                     </div>
                 </div>
-                <div className="shop__items">
+                <div className="shop-items">
                     {items.map(obj => <ShopItem
                         onClickAddFlower={handleAddFlowerToCart}
                         addedCount={cartItems[obj.id] && cartItems[obj.id].items.length}
                         key={obj.id} {...obj} />)}
                 </div>
-                <div className="shop__pagination">
+                <div className="shop-pagination">
                     {pages.map((page, index) => <span 
                     key={index} 
-                    className={currentPage === page ? "shop__pagination-current-page" : ""}
+                    className={currentPage === page ? "shop-pagination__current-page" : ""}
                     onClick={() => dispatch(setCurrentPage(page))}>{page}</span>)}
                 </div>
             </div>

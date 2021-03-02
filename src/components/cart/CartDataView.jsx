@@ -11,12 +11,12 @@ function СartDataView() {
         }
     }
     return (
-        <div className="cart__data">
+        <div className="cart-data">
             <span>
-                <span className="cart__data-total__count">Всего товаров в корзине: {totalCount}</span>
-                <span className="cart__data-total__price">Общая стоимость: {totalPrice}</span>
+                <span className="cart-data__total-count">Всего товаров в корзине: {totalCount}</span>
+                <span className="cart-data__total-price">Общая стоимость: {totalPrice}</span>
             </span>
-            <span className="cart__data-delete" onClick={onClearCart}> Очистить корзину</span>
+            <span className="cart-data__delete" onClick={onClearCart}> Очистить корзину</span>
         </div>
     )
 }

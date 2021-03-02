@@ -5,7 +5,7 @@
     border-radius: 30px;
     position: relative;
     cursor: pointer;
-    &-menu {
+    &__menu {
         position: absolute;
         z-index: 1;
         color: #ebf2f8;
@@ -23,7 +23,7 @@
             margin: 3px;
         }
     }
-    &-active {
+    &_active {
         background: #e55472;
         padding: 5px;
         color: white;

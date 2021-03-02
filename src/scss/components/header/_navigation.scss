@@ -1,0 +1,27 @@
+.header nav {
+    align-self: center;
+}
+.top-navigation {
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: center;
+    height: 67px;
+    & ul {
+        display: flex;
+        align-self: center;
+        & li {
+            display: inline-block;
+            position: relative;
+            margin-right: 45px;
+            font-size: 13px;
+            font-weight: 500;
+            height: 23px;
+        }
+    }
+    &__item a {
+        color: #666666;
+    }
+}
+.activeLink {
+    border-bottom: 1px #e55472 solid;
+}

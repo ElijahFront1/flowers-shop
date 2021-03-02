@@ -1,18 +1,16 @@
-.shop__items {
+.shop-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-.counter__settings {
+.shop-data {
     display: flex;
     justify-content: space-between;
     padding-bottom: 40px;
     padding-top: 15px;
     align-items: center;
 }
-
-.shop__pagination {
+.shop-pagination {
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -29,7 +27,7 @@
         margin-right: 10px;
         margin-top: 15px;
     }
-    &-current-page {
+    &__current-page {
         border-bottom: 2px #e55472 solid;
     }
 }

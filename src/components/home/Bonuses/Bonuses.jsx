@@ -3,14 +3,13 @@ import cashbackIcon from '../../../images/cashback-icon.png'
 import safetyIcon from '../../../images/safety-icon.png'
 import giftsIcon from '../../../images/gifts-icon.png'
 import deliveryIcon from '../../../images/delivery-icon.png'
-import BonusesItem from './BonusesItem'
 
 function Bonuses() {
     return (
         <div className="container">
             <div className="bonuses-wrap">
                 <div className="bonuses">
-                    <div className="bonuses-item">
+                    <div className="bonuses__item">
                         <div>
                             <img src={deliveryIcon} />
                         </div>
@@ -19,7 +18,7 @@ function Bonuses() {
                             <p>От 1500 рублей</p>
                         </div>
                     </div>
-                    <div className="bonuses-item">
+                    <div className="bonuses__item">
                         <div>
                             <img src={giftsIcon} />
                         </div>
@@ -28,7 +27,7 @@ function Bonuses() {
                             <p>Для всех</p>
                         </div>
                     </div>
-                    <div className="bonuses-item">
+                    <div className="bonuses__item">
                         <div>
                             <img src={safetyIcon} />
                         </div>
@@ -37,7 +36,7 @@ function Bonuses() {
                             <p>Оплата VISA MC</p>
                         </div>
                     </div>
-                    <div className="bonuses-item">
+                    <div className="bonuses__item">
                         <div>
                             <img src={cashbackIcon} />
                         </div>

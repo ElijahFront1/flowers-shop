@@ -8,7 +8,7 @@ function Header() {
     const { totalPrice, totalCount } = useSelector(({ cartReducer }) => cartReducer)
     const [input, setInput] = React.useState('');
     return (
-        <div>
+        <header>
             <div className="container">
                 <div className="header">
                     <div className="header-logo">
@@ -18,12 +18,10 @@ function Header() {
                     </div>
                     <div className="phone-search">
                         <div className="phone">
-                            <div className="icon-phone-wrap">
-                                <i className="icon-phone"></i>
-                            </div>
-                            <div className="number-phone-wrap">
-                                <h6>ТЕЛЕФОН</h6>
-                                <h6>+7(963)-012-02-12</h6>
+                            <i className="icon-phone"></i>
+                            <div className="phone__number">
+                                <p>ТЕЛЕФОН</p>
+                                <p>+7(963)-012-02-12</p>
                             </div>
                         </div>
                         <div className="search">
@@ -37,24 +35,24 @@ function Header() {
                             </form>
                         </div>
                     </div>
-                    <div className="cart" >
+                    <div className="header-cart-link" >
                         <NavLink to="/cart">
-                            <div className="cart-info">
-                                <div className="cart-sup">
+                            <div className="header-cart-link__cart-info">
+                                <div className="header-cart-link__cart-sup">
                                     <i className="icon-handbag"></i>
                                     <sup>{totalCount}</sup>
                                 </div>
-                                <h6>
+                                <p>
                                     <div>Ваша корзина</div>
-                                    <div className="cart-price">{totalPrice}</div>
-                                </h6>
+                                    <div className="header-cart-link__cart-price">{totalPrice}</div>
+                                </p>
                             </div>
                         </NavLink>
                     </div>
                 </div>
             </div>
             <Navbar />
-        </div>
+        </header>
     )
 }
 export default Header

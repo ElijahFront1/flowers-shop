@@ -1,4 +1,4 @@
-.container1 {
+.most-popular-item {
     height: 301px;
     position: relative;
     border: 1px solid #e55472;
@@ -7,8 +7,13 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    &:hover .image {
+        opacity: 0.3;
+    }
+    &:hover .middle {
+        opacity: 1;
+    }
 }
-
 .image {
     opacity: 1;
     display: block;
@@ -17,21 +22,11 @@
     width: 85%;
     height: 85%;
 }
-
 .middle {
     transition: 0.5s ease;
     opacity: 0;
     position: absolute;
 }
-
-.container1:hover .image {
-    opacity: 0.3;
-}
-
-.container1:hover .middle {
-    opacity: 1;
-}
-
 .text {
     color: white;
     font-size: 16px;

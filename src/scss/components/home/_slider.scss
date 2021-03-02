@@ -4,26 +4,26 @@
     position: absolute;
     top: 25%;
     padding-left: 40px;
-    &-wrap {
+    &__wrap {
         background-color: white;
         max-height: 700px;
     }
-    &-title {
+    &__title {
         font-size: 72px;
         line-height: 1;
         color: #434343;
         font-weight: 700;
     }
-    &-discription {
+    &__discription {
         padding-top: 15px;
         padding-bottom: 15px;
         font-size: 25px;
         font-weight: 400;
     }
-    &-discription-bottom {
+    &__discription-bottom {
         padding-bottom: 30px;
     }
-    &-shop-btn button {
+    &__shop-btn button {
         height: 50px;
         width: 140px;
         border-radius: 50px;

@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ShopItem({ id, name, imageUrl, price, types, sizes, onClickAddFlower, addedCount }) {
+function ShopItem({ id, name, imageUrl, price, onClickAddFlower, addedCount }) {
 
     const onAddFlower = () => {
         const obj = {
@@ -14,21 +14,21 @@ function ShopItem({ id, name, imageUrl, price, types, sizes, onClickAddFlower, a
 
     return (
         <div className="product">
-            <div className="product-previev">
+            <div className="product__previev">
                 <img src={imageUrl} alt="" />
-                <div className="product-discount">
+                <div className="product__discount">
                 </div>
-                <div className="product-add__to__cart">
+                <div className="product__add-to-cart">
                     <button onClick={onAddFlower} >Добавить в корзину
-                     <span className="product-added__count">{addedCount}</span>
+                     <span className="product__added-count">{addedCount}</span>
                     </button>
                 </div>
             </div>
-            <div className="product-namePrice">
-                <div className="product-name">
+            <div className="product__name-price">
+                <div className="product__name">
                     <p>{name}</p>
                 </div>
-                <div className="product-price">
+                <div className="product__price">
                     <p>{price} <span className="rub">i</span></p>
                 </div>
             </div>

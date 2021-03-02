@@ -1,6 +1,6 @@
 .product {
     margin-bottom: 15px;
-    &-previev {
+    &__previev {
         height: 301px;
         background-color: white;
         position: relative;
@@ -14,24 +14,24 @@
             height: 85%;
         }
     }
-    &-namePrice {
+    &__name-price {
         padding-top: 20px;
         text-align: center;
     }
-    &-discount {
+    &__discount {
         position: absolute;
         top: 15px;
         left: 15px;
     }
-    &-price {
+    &__price {
         font-weight: 600;
     }
-    &-name {
+    &__name {
         font-size: 14px;
         text-transform: uppercase;
         font-weight: 400;
     }
-    &-add__to__cart {
+    &__add-to-cart {
         position: absolute;
         bottom: 0px;
         background-color: #e55472;
@@ -50,7 +50,7 @@
             width: 100%;
         }
     }
-    &-added__count {
+    &__added-count {
         display: inline-block;
         position: absolute;
         right: 17px;

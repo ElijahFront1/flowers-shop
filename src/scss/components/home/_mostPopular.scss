@@ -1,5 +1,5 @@
 .mostPopular {
-    padding-top: 160px;
+    padding-top: 120px;
     padding-bottom: 80px;
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@
         &::before {
             position: absolute;
             content: "";
-            width: 365px;
+            max-width: 365px;
             height: 2px;
             background-color: #e55472;
             left: 0;

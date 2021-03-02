@@ -1,15 +1,15 @@
-.cart__wrapper {
+.cart-wrapper {
     min-height: 50vh;
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
 }
-.cart__data {
+.cart-data {
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;
-    &-total__count {
+    &__total-count {
         display: inline-block;
         padding-right: 15px;
         width: 252px;
@@ -17,7 +17,7 @@
     & span {
         cursor: pointer;
     }
-    &-delete {
+    &__delete {
         background-color: #f7f7f7;
         padding-left: 10px;
         padding-right: 10px;
@@ -32,7 +32,7 @@
 }
 .empty-cart {
     text-align: center;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     & h3 {
         padding-top: 20px;
