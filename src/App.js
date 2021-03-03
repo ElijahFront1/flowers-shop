@@ -4,6 +4,7 @@ import {
   withRouter,
   Switch,
   BrowserRouter,
+  Redirect,
 } from "react-router-dom"
 
 import Home from './pages/Home'
@@ -23,6 +24,7 @@ function App() {
             <Route exact path='/home' component={Home} />
             <Route exact path='/cart' component={Cart} />
             <Route exact path='/shop' component={Shop} />
+            <Redirect from="/" to="/home" />
             <Route path="*" component={NotFound} />
           </Switch>
           <Footer />
