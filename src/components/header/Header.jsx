@@ -25,7 +25,7 @@ function Header() {
                             </div>
                         </div>
                         <div className="search">
-                            <form action="#">
+                            <form>
                                 <input value={input} onInput={e => setInput(e.target.value)} placeholder="Искать..." />
                                 <button>
                                     <span>
