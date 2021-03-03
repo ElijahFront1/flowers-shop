@@ -1,3 +1,8 @@
+$screen-tablets: 500px;
+$width744: 744px;
+$width992: 992px;
+$width1280: 1280px;
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -17,6 +22,9 @@
     }
 }
 .phone {
+    @media (max-width: $width992) {
+        display: none;
+    }
     display: flex;
     align-self: center;
     padding-right: 30px;
@@ -31,6 +39,9 @@
     font-size: 20px;
 }
 .search {
+    @media (max-width: $width992) {
+        display: none;
+    }
     min-width: 500px;
     padding: 25px 0;
     & form {

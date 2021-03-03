@@ -2,6 +2,12 @@
     position: relative;
 }
 .bonuses {
+    @media (max-width: $width1280) {
+        flex-direction: column;
+    }
+    @media (max-width: $width992) {
+        display: none; 
+    }
     width: 100%;
     display: flex;
     justify-content: space-around;

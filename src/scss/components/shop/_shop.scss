@@ -1,7 +1,7 @@
 .shop-items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .shop-data {
     display: flex;
@@ -9,6 +9,9 @@
     padding-bottom: 40px;
     padding-top: 15px;
     align-items: center;
+    @media (max-width: $width992) {
+        flex-direction: column;
+    }
 }
 .shop-pagination {
     display: flex;

@@ -53,7 +53,6 @@ const cart = (state = initialstate, action) => {
 
 
         case 'REMOVE_CART_ITEM': {
-            debugger
             const newItems = {
                 ...state.items,
             };

@@ -11,7 +11,7 @@ function SliderText() {
                     <div className="slider__discription-bottom">Сделайте заказ на День святого Валентина с 7 марта по 23 апреля и получите скидку 10% на весь заказ!</div>
                     <div className="slider__shop-btn">
                         <NavLink to="/shop">
-                            <button>В магазин</button>
+                            <button className="button">В магазин</button>
                         </NavLink>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ function ShopItem({ imageUrl }) {
         <div class="most-popular-item">
             <img src={imageUrl} alt="Avatar" class="image" />
                 <div class="middle">
-                    <NavLink to="/shop" class="text">В магазин</NavLink>
+                    <NavLink to="/shop" class="text button">В магазин</NavLink>
                 </div>
         </div>
     )

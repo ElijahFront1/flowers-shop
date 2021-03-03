@@ -8,6 +8,10 @@
         border-radius: 5px;
         display: flex;
         justify-content: center;
+        @media (max-width: $width992) {
+            height: 200px;
+            width: 180px;
+        }
         & img {
             width: 85%;
             align-self: center;
@@ -28,7 +32,6 @@
     }
     &__name {
         font-size: 14px;
-        text-transform: uppercase;
         font-weight: 400;
     }
     &__add-to-cart {
@@ -55,5 +58,8 @@
         position: absolute;
         right: 17px;
         color: white;
+        @media (max-width: $width992) {
+            display: none;
+        }
     }
 }

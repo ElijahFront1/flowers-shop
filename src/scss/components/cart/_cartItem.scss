@@ -1,7 +1,10 @@
 .cart-item-wrapper {
     border-top: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: center;
 }
 .cart-item {
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,7 +14,11 @@
     padding-right: 15px;
     font-weight: 500;
     cursor: pointer;
+    @media (max-width: $width992) {
+        flex-direction: column;
+    }
     &__remove {
+        display: inherit;
         width: 89px;
         background-color: #f7f7f7;
         padding-left: 10px;
@@ -22,8 +29,12 @@
             color: white;
             background-color: #565656;
         }
+        &__name {
+            display: inherit;
+        }
     }
     &__image {
+        display: inherit;
         width: 100px;
         height: 100px;
     }
@@ -31,7 +42,7 @@
         width: 100%;
     }
     &__quantity {
-        display: flex;
+        display: inherit;
         justify-content: space-between;
         background-color: #f7f7f7;
         padding-left: 10px;
@@ -48,9 +59,34 @@
         }
     }
     &__subtotal {
+        display: inherit;
         width: 60px;
-        &-total__price {
-            color:  #e55472;
+        color: #e55472;
+    }
+    &__left-block {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        padding-right: 9%;
+        align-items: center;
+        @media (max-width: $width992) {
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        @media (max-width: $width744) {
+            flex-direction: column;
+            padding-right: 0;
+            width: 100%;
+        }
+    }
+    &__right-block {
+        display: flex;
+        width: 55%;
+        justify-content: space-between;
+        @media (max-width: $width744) {
+            flex-direction: row;
+            width: 100%;
         }
     }
 }

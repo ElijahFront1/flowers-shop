@@ -2,7 +2,11 @@
     padding-top: 120px;
     padding-bottom: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: center;        
+    @media (max-width: $width992) {
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
     & h1 {
         font-size: 40px;
         font-weight: 800;
@@ -22,6 +26,6 @@
     &__products {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 }
