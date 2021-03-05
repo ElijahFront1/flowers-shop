@@ -27,7 +27,7 @@ function Header() {
                         <div className="search">
                             <form action="#">
                                 <input value={input} onInput={e => setInput(e.target.value)} placeholder="Искать..." />
-                                <button>
+                                <button disabled>
                                     <span>
                                         <i className="icon-magnifier"></i>
                                     </span>
