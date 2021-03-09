@@ -21,10 +21,10 @@ function App() {
         <BrowserRouter>
           <Header />
           <Switch>
-            <Route exact path='/' component={Home} />
             <Route exact path='/cart' component={Cart} />
             <Route exact path='/shop' component={Shop} />
             <Route path="*" component={NotFound} />
+            <Route exact path='/' component={Home} />
           </Switch>
           <Footer />
         </BrowserRouter>
