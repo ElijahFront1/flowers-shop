@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  Route,
-  withRouter,
-  Switch,
-  BrowserRouter,
-  Redirect,
-} from "react-router-dom"
+import { Route, Redirect, Switch } from 'react-router-dom';
 
 import Home from './pages/Home'
 import Header from './components/header/Header'
@@ -17,20 +11,20 @@ import Footer from './components/footer/Footer'
 function App() {
   return (
     <div className="general-wrapper">
-      <React.StrictMode>
-        <BrowserRouter>
-          <Header />
-          <Switch>
-            <Route exact path='/cart' component={Cart} />
-            <Route exact path='/shop' component={Shop} />
-            <Route path="*" component={NotFound} />
-            <Route exact path='/' component={Home} />
-          </Switch>
-          <Footer />
-        </BrowserRouter>
-      </React.StrictMode>
+      <Header />
+      <Switch>
+        <Route path='/home' component={Home} exact />
+        <Route path='/cart' component={Cart} exact />
+        <Route path='/shop' component={Shop} exact />
+        <Route path='/gallery' component={NotFound} />
+        <Route path='/blog' component={NotFound} />
+        <Route path='/contacts' component={NotFound} />
+        <Redirect from="/" to="/home" />
+        <Route  />
+      </Switch>
+      <Footer />
     </div>
   );
 }
 
-export default withRouter(App);
+export default App
