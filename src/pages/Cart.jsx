@@ -9,7 +9,7 @@ function Cart() {
     const dispatch = useDispatch();
     const { totalCount, items } = useSelector(({ cartReducer }) => cartReducer)
 
-    const addPizzas = Object.keys(items).map(key => {
+    const addFlowers = Object.keys(items).map(key => {
         return items[key].items[0]
     });
 
@@ -28,7 +28,7 @@ function Cart() {
         <div className="container">
             <div className="cart-wrapper">
                 {totalCount >= 1 && <СartDataView />}
-                {addPizzas.map(obj => <CartItem
+                {addFlowers.map(obj => <CartItem
                     key={obj.id}
                     price={obj.price}
                     imageUrl={obj.imageUrl}
